@@ -1,0 +1,29 @@
+<app-header titulo="Calendário"></app-header>
+
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button routerLink="/inicio">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button routerLink="/notas">
+        <ion-icon name="calculator-outline"></ion-icon>
+        <ion-label>Notas</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button routerLink="/sair">
+        <ion-icon name="exit-outline"></ion-icon>
+        <ion-label>Sair</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+  <ion-button color="sucess" expand="full" (click)="presentcalendario() ">
+    2021-2
+  </ion-button>
+
+</ion-content>
